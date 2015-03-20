@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface PlaylistDetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *butonPressedLabel;
+
+
+@property (strong, nonatomic) NSString *segueLabelText;
 
 @end

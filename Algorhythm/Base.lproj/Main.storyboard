@@ -16,14 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-vZ-rqw">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-vZ-rqw">
+                                <rect key="frame" x="136" y="267" width="49" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="feo-o9-Vh3" kind="push" id="0en-Il-aPN"/>
+                                    <segue destination="feo-o9-Vh3" kind="push" identifier="showPlaylistDetail" id="0en-Il-aPN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,9 +54,24 @@
                     <view key="view" contentMode="scaleToFill" id="gIG-nw-LUw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You haven't pressed the button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOY-t9-T9T">
+                                <rect key="frame" x="44" y="273" width="233" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.40437397203947334" green="0.61782997532894723" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="QOY-t9-T9T" secondAttribute="centerY" id="az2-1k-7W4"/>
+                            <constraint firstAttribute="centerX" secondItem="QOY-t9-T9T" secondAttribute="centerX" id="yRR-c1-YJi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="UQi-tf-okU"/>
+                    <connections>
+                        <outlet property="butonPressedLabel" destination="QOY-t9-T9T" id="yMy-fd-aUr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvY-UL-3nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
