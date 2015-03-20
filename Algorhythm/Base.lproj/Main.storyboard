@@ -19,14 +19,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcD-vZ-rqw">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SOn-wB-eOl"/>
+                                    <segue destination="feo-o9-Vh3" kind="modal" id="0en-Il-aPN"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.32041529605263158" green="0.71499794407894723" blue="0.88168174342105265" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ZcD-vZ-rqw" secondAttribute="centerX" id="5UA-eZ-u5T"/>
                             <constraint firstAttribute="centerY" secondItem="ZcD-vZ-rqw" secondAttribute="centerY" id="ZO8-S2-SpU"/>
@@ -51,7 +52,7 @@
                     <view key="view" contentMode="scaleToFill" id="gIG-nw-LUw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.40437397203947334" green="0.61782997532894723" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvY-UL-3nE" userLabel="First Responder" sceneMemberID="firstResponder"/>

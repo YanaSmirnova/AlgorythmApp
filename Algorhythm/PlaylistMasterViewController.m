@@ -25,9 +25,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPressed {
-    self.view.backgroundColor = [UIColor orangeColor];
-    [self.aButton setTintColor:[UIColor whiteColor]];
-}
-
 @end
